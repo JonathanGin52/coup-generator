@@ -1,0 +1,13 @@
+{
+  "name": "coup-generator",
+  "version": "1.0.0",
+  "description": "Card generator for Coup Rebellion G54",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "coup": "bin/coup"
+  },
+  "license": "MIT"
+}
