@@ -9,5 +9,8 @@
   "bin": {
     "coup": "bin/coup"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
 }
