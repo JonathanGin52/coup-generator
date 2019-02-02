@@ -9,6 +9,21 @@
       "name": "Director",
       "action": "Active player takes 2 random cards from the Deck. They may Secretly Change any cards with their own, and then return 2 cards to the Deck.",
       "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
     }
   ],
   "force": [
@@ -16,12 +31,52 @@
       "name": "Crime Boss",
       "action": "Active player declares a Target. Target can choose to give the active player (2-isk) and the turn ends. If not, the active player must pay (5-isk) to the Treasury and the Target loses a life. The active player must have (5-isk) to take this action.",
       "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
     }
   ],
   "finance": [
     {
       "name": "Spy",
       "action": "Active player takes (1-isk) from the Treasury and can then take an additional action of their choice. They cannot take the intel action again this turn.\nIf a player starts a  turn with 10 or more coins(isk), they must take the Coup action and may not claim spy before doing so. If a player takes the intel action and then has10 coins(isk) - they must take the Coup action as their additional action.",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
       "counteraction": null
     }
   ],
@@ -34,6 +89,46 @@
     {
       "name": "Foreign Consular",
       "action": "Active player takes both Treaty tokens, placing one in front of themselves and one in front of another player. Players with Treaty tokens may not Target each other unless they are the final two players. This includes Coup actions but does not preclude challenges.",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
+      "counteraction": null
+    },
+    {
+      "name": "",
+      "action": "",
       "counteraction": null
     }
   ]
