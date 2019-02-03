@@ -1,14 +1,12 @@
 const { communications, force, finance, specialInterest } = require('../data/cards.json');
-const log = console.log;
+const formatOutput = require('../util/format');
+const error = require('../util/error');
 
-module.exports = (args) => {
-  console.log('Loading game');
-  const seed = args.seed || args.s;
-  log(seed);
+module.exports = (seed) => {
+  console.log(`Your game seed is ${seed}`);
   const deck = [];
 
-  const ids = seed.toString().split('');
-  ids.forEach((id, index) => {
+  seed.toString().split('').forEach((id, index) => {
     switch (index) {
       case 0:
         deck.push(communications[id]);
@@ -26,10 +24,10 @@ module.exports = (args) => {
         deck.push(specialInterest[id]);
         break;
       default:
-        log('Your seed is too long');
+        error('Your seed is too long.', true);
         break;
     }
   });
-  log(deck);
+  formatOutput(deck);
 };
 
