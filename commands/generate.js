@@ -57,8 +57,10 @@ Array.prototype.sample = function(count = 1) {
 }
 
 module.exports = (args) => {
+  // TODO: Not being used yet, leverage when load by seed is complete
   const gameSeed = generateGameSeed();
   log(gameSeed);
+
   let deck = [];
 
   deck.push(communications.sample());
