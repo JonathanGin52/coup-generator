@@ -16,14 +16,17 @@ Array.prototype.sample = function(count = 1) {
 };
 
 module.exports = (args) => {
-  log('generating game');
-  const deck = [];
+  log('Generating game');
+  let deck = [];
+  let seed = "";
   //log(cards);
   deck.push(communications.sample());
   deck.push(force.sample());
   deck.push(finance.sample());
   deck.push(specialInterest.sample(2));
 
-  log(deck);
+  deck = [].concat.apply([], deck);
+  deck.forEach((card) => seed += card.id);
+  log(`Your game seed is '${seed}.'`);
 };
 
