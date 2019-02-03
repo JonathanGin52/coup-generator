@@ -14,7 +14,8 @@ const shuffle = (array) => {
 };
 
 Array.prototype.sample = function(count = 1) {
-  return shuffle(this).slice(0, count);
+  const elements = shuffle(this).slice(0, count);
+  return count == 1 ? elements[0] : elements; 
 }
 
 module.exports = (args) => {
