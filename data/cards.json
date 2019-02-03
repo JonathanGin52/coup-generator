@@ -9,6 +9,21 @@
       "name": "Director",
       "action": "Active player takes 2 random cards from the Deck. They may Secretly Change any cards with their own, and then return 2 cards to the Deck.",
       "counteraction": null
+    },
+    {
+      "name": "Writer",
+      "action": "Active player takes 1 random card from the Deck and looks at it. They may then pay (1-isk) to the Treasury to take an additional card from the deck, and look at it. They may repeat that process as often as they choose, paying (1-isk) for each additional card. They may secretly change any cards with their own, and then return as many as cards as they took back to the Deck.",
+      "counteraction": null
+    },
+    {
+      "name": "Newscaster",
+      "action": "Active player pays (1-isk) to the treasury, then takes 3 random cards from the Deck. They may secretly change any cards with their own, and then return 3 cards to the Deck.",
+      "counteraction": null
+    },
+    {
+      "name": "Reporter",
+      "action": "Active player takes 1 random card from the Deck and (1-isk) from the Treasury. They may secretly change the card with one of their own, and then return 1 card to the Deck.",
+      "counteraction": null
     }
   ],
   "force": [
@@ -16,12 +31,52 @@
       "name": "Crime Boss",
       "action": "Active player declares a Target. Target can choose to give the active player (2-isk) and the turn ends. If not, the active player must pay (5-isk) to the Treasury and the Target loses a life. The active player must have (5-isk) to take this action.",
       "counteraction": null
+    },
+    {
+      "name": "Judge",
+      "action": "Active Player declares a Target and gives Target (3-isk). Target loses a life.",
+      "counteraction": "Target may claim judge to avoid losing a life, keeping the (3-isk) given"
+    },
+    {
+      "name": "General",
+      "action": "Active player pays (5-isk) to the Treasury. All other players become Targets and lose a life",
+      "counteraction": "Target may claim General to avoid losing a life"
+    },
+    {
+      "name": "Guerrilla",
+      "action": "Active player pays (4-isk) and declares Target. Target loses a life.",
+      "counteraction": "Target may claim Guerrilla to avoid losing a life"
+    },
+    {
+      "name": "Mercenary",
+      "action": "Active player pays (3-isk) to the Treasury and declares a Target. Target places the Disappear token in front of themselves. If the Target still has the Disappear token at the end of their next turn, they lose a life and then discard the token.",
+      "counteraction": "Target may claim Mercenary when they are targeted, or at any time on their next turn to avoid losing a life. They discard the Disappear token if counteracted."
     }
   ],
   "finance": [
     {
       "name": "Spy",
       "action": "Active player takes (1-isk) from the Treasury and can then take an additional action of their choice. They cannot take the intel action again this turn.\nIf a player starts a  turn with 10 or more coins(isk), they must take the Coup action and may not claim spy before doing so. If a player takes the intel action and then has10 coins(isk) - they must take the Coup action as their additional action.",
+      "counteraction": null
+    },
+    {
+      "name": "Capitalist",
+      "action": "Active player first takes (4-isk) from the Treasury. Then any other players may also claim Capitalist. Once all claims have been made, challenges are resolved for new claimants in clockwise order from the active player. Then the active player must give (1-isk) to each surviving Capitalist claimant.",
+      "counteraction": null
+    },
+    {
+      "name": "Banker",
+      "action": "Active player takes (3-isk) from the Treasury.",
+      "counteraction": null
+    },
+    {
+      "name": "Speculator",
+      "action": "Active player takes as many coins from the Treasury as they have already - maximum of (5-isk). If the Speculator is successfully challenged, the coins taken from the Treasury are returned and then the challenger takes all active player's coins.",
+      "counteraction": null
+    },
+    {
+      "name": "Farmer",
+      "action": "Active player takes (3-isk) from the Treasury and must then give (1-isk) to another player of their choice.",
       "counteraction": null
     }
   ],
@@ -34,6 +89,46 @@
     {
       "name": "Foreign Consular",
       "action": "Active player takes both Treaty tokens, placing one in front of themselves and one in front of another player. Players with Treaty tokens may not Target each other unless they are the final two players. This includes Coup actions but does not preclude challenges.",
+      "counteraction": null
+    },
+    {
+      "name": "Communist",
+      "action": "Active player takes up to (3-isk) from the player with the most coins (Target) and gives the taken coins to the player with the fewest coins. In the event of a tie for most or fewest coins, the active player decides who is the Target.",
+      "counteraction": "Target may claim Communist to avoid giving any coins."
+    },
+    {
+      "name": "Customs Officer",
+      "action": "Active player takes both tax tokens, placing one in front of themselves and one on a role card in play. Before any player can claim the role (for either an action or counteraction) that has the Tax token on it, they must first give (1-isk) to the player with the Tax  token - if they do not have a coin to give, they may not claim that role. If the player that has the Tax token is eliminated, remove  the Tax token from the role card.",
+      "counteraction": null
+    },
+    {
+      "name": "Peacekeeper",
+      "action": "Active player takes (1-isk) from the Treasury and then places the Peacekeeping token in front of themselves. While the Peacekeeping token is front of a player, that player cannot be targeted. This does not prevent coup actions nor preclude challenges.",
+      "counteraction": null
+    },
+    {
+      "name": "Politician",
+      "action": "Active player declares Target and takes up to (2-isk) from the Target.",
+      "counteraction": "Target may claim politician to avoid giving any coins."
+    },
+    {
+      "name": "Protestor",
+      "action": "Active player pays (2-isk) to the Treasury and declares Target. Any player may challenge, if not successfully challenged then any other player can pay (3-isk) to the Treasury to join the riot and the Target loses a life. The player joining the Riot does not have to claim Protestor, If no other player joins the Riot, the action fails without coins being returned.",
+      "counteraction": "After both players have joined the Riot, the Target may claim Protestor to avoid losing a life."
+    },
+    {
+      "name": "Lawyer",
+      "action": "At the end of any turn on which a player is eliminated, any other player may claim Lawyer and take all the coins from the eliminated player before those coins are returned to the Treasury. If multiple players claim Lawyer, the coins are divided equally amongst those players with any excess going to the Treasury.",
+      "counteraction": null
+    },
+    {
+      "name": "Intellectual",
+      "action": "When a player loses a life for any reason, they may claim the Intellectual. The card claimed to be the Intellectual is put aside face-down as the lost life and that player takes (5-isk) from the Treasury. If challenged the card claimed as the Intellectual is revealed. If the card is not the intellectual, the player that claimed the intellectual loses another life (and does not take (5-isk) from the Treasury). If the card is the Intellectual, the challenger loses a life.",
+      "counteraction": null
+    },
+    {
+      "name": "Missionary",
+      "action": "When a player loses a life for any reason other than a Coup, they may claim the Missionary If the Deck has at least one card. The card claimed to be Missionary is put aside face-down as the lost life and that player takes 1 card from the Deck. If challenged, the card claimed as the Missionary is revealed. If the card is not the Missionary, the player that claimed the Missionary loses another life (and does not take 1 card from the Deck) - they may claim Missionary on the second life lost to avoid being eliminated. If the card is the Missionary, the challenger loses a life.",
       "counteraction": null
     }
   ]
