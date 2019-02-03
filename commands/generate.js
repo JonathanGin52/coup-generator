@@ -1,28 +1,6 @@
 const { communications, force, finance, specialInterest } = require('../data/cards.json');
 const load = require('./load');
-
-const game = {
-  'Communications': {
-    'count': 1,
-    'colour': 'cyan',
-    'cards': communications,
-  },
-  'Force': {
-    'count': 1,
-    'colour': 'yellow',
-    'cards': force,
-  },
-  'Finance': {
-    'count': 1,
-    'colour': 'red',
-    'cards': finance,
-  },
-  'Special Interest': {
-    'count': 2,
-    'colour': 'magenta',
-    'cards': specialInterest,
-  },
-};
+const game = require('../util/game.js');
 
 const random = (n) => Math.floor(Math.random() * n);
 
