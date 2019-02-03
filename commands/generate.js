@@ -8,6 +8,42 @@ const { communications, force, finance, specialInterest } = cards;
 // Functions
 const { log } = console;
 
+const game = {
+  "Communications": {
+    "count": 1,
+    "colour": cyan,
+    "cards": communications,
+  },
+  "Force": {
+    "count": 1,
+    "colour": yellow,
+    "cards": force,
+  },
+  "Finance": {
+    "count": 1,
+    "colour": red,
+    "cards": finance,
+  },
+  "Special Interest": {
+    "count": 2,
+    "colour": magenta,
+    "cards": specialInterest,
+  },
+};
+  
+
+const random = (n) => Math.floor(Math.random() * n); 
+
+const generateGameSeed = () => {
+  var s = "";
+  for (const character in game) {
+    for (let i = 0; i < game[character]["count"]; i++) {
+      s += random(game[character]["cards"].length);
+    }
+  }
+  return s;
+}
+
 const shuffle = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -21,6 +57,10 @@ Array.prototype.sample = function(count = 1) {
 }
 
 module.exports = (args) => {
+  // TODO: Not being used yet, leverage when load by seed is complete
+  const gameSeed = generateGameSeed();
+  log(gameSeed);
+
   let deck = [];
 
   deck.push(communications.sample());
