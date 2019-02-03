@@ -14,18 +14,27 @@ const shuffle = (array) => {
 };
 
 Array.prototype.sample = function(count = 1) {
-  const elements = shuffle(this).slice(0, count);
-  return count == 1 ? elements[0] : elements; 
+  return shuffle(this).slice(0, count);
 }
 
 module.exports = (args) => {
-  const deck = {};
+  let deck = [];
 
-  deck.communications = communications.sample();
-  deck.force = force.sample();
-  deck.finance = finance.sample();
-  deck.specialInterest = specialInterest.sample(2);
+  deck.push(communications.sample());
+  deck.push(force.sample());
+  deck.push(finance.sample());
+  deck.push(specialInterest.sample(2));
 
-  console.log(deck);
+  deck = [].concat.apply([], deck);
+
+  // Print out the deck
+  let drawn = ["Communications", "Force", "Finance", "Special Interest", "Special Interest"];
+  let colours = [cyan, yellow, red, magenta, magenta];
+
+  for (let i = 0; i < drawn.length; i++) {
+    console.log(colours[i](drawn[i]));
+    console.log("Action: " + deck[i].action);
+    deck[i].counteraction && console.log("Counteraction: " + deck[i].counteraction);
+  }
 };
 
