@@ -1,7 +1,9 @@
+// NPM modules
 const { red, yellow, magenta, cyan, white } = require('cli-color');
+
+// Cards data
 const cards = require('../data/cards.json');
 const { communications, force, finance, specialInterest } = cards;
-const log = console.log;
 
 const shuffle = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
@@ -16,14 +18,23 @@ Array.prototype.sample = function(count = 1) {
 };
 
 module.exports = (args) => {
-  log('generating game');
-  const deck = [];
-  //log(cards);
+  let deck = [];
+
   deck.push(communications.sample());
   deck.push(force.sample());
   deck.push(finance.sample());
   deck.push(specialInterest.sample(2));
 
-  log(deck);
+  deck = [].concat.apply([], deck);
+
+  // Print out the deck
+  let drawn = ["Communications", "Force", "Finance", "Special Interest", "Special Interest"];
+  let colours = [cyan, yellow, red, magenta, magenta];
+
+  for (let i = 0; i < drawn.length; i++) {
+    console.log(colours[i](drawn[i]));
+    console.log("Action: " + deck[i].action);
+    deck[i].counteraction && console.log("Counteraction: " + deck[i].counteraction);
+  }
 };
 
