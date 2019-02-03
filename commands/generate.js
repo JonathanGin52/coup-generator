@@ -1,9 +1,5 @@
-// Cards data
 const { communications, force, finance, specialInterest } = require('../data/cards.json');
-
-// Functions
-const log = console.log;
-const formatOutput = require('../util/format');
+const load = require('./load');
 
 const game = {
   'Communications': {
@@ -28,7 +24,6 @@ const game = {
   },
 };
 
-
 const random = (n) => Math.floor(Math.random() * n);
 
 const generateGameSeed = () => {
@@ -39,35 +34,7 @@ const generateGameSeed = () => {
     }
   }
   return seed;
-}
-
-const shuffle = (array) => {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
 };
 
-Array.prototype.sample = function(count = 1) {
-  return shuffle(this).slice(0, count);
-}
-
-module.exports = (args) => {
-  // TODO: Not being used yet, leverage when load by seed is complete
-  const gameSeed = generateGameSeed();
-  log(gameSeed);
-
-  let deck = [];
-
-  deck.push(communications.sample());
-  deck.push(force.sample());
-  deck.push(finance.sample());
-  deck.push(specialInterest.sample(2));
-
-  deck = [].concat.apply([], deck);
-
-  // Print out the deck
-  formatOutput(deck);
-};
+module.exports = (args) => load(generateGameSeed());
 

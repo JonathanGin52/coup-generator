@@ -1,11 +1,11 @@
 const minimist = require('minimist');
 const generate = require('./commands/generate');
 const load = require('./commands/load');
+const error = require('./util/error');
 
 module.exports = () => {
   const args = minimist(process.argv.slice(2));
   let cmd = args._[0] || 'generate';
-  console.log(args);
 
   switch (cmd) {
     case 'generate':
@@ -14,10 +14,12 @@ module.exports = () => {
       break;
     case 'load':
     case 'l':
-      load(args);
+      const seed = args.s || args.seed;
+      load(seed);
       break;
     default:
-      console.error(`"${cmd}" is not a valid command!`);
+      error(`"${cmd}" is not a valid command!`, true);
       break;
   }
 };
+
