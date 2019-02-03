@@ -9,7 +9,7 @@
     {
       "id": "c1",
       "name": "Newscaster",
-      "action": "Active player pays (1-isk) to the treasury, then takes 3 random cards from the Deck. They may secretly change any cards with their own, and then return 3 cards to the Deck.",
+      "action": "Active player pays ①  to the treasury, then takes 3 random cards from the Deck. They may secretly change any cards with their own, and then return 3 cards to the Deck.",
       "counteraction": null
     },
     {
@@ -21,13 +21,13 @@
     {
       "id": "c3",
       "name": "Reporter",
-      "action": "Active player takes 1 random card from the Deck and (1-isk) from the Treasury. They may secretly change the card with one of their own, and then return 1 card to the Deck.",
+      "action": "Active player takes 1 random card from the Deck and ①  from the Treasury. They may secretly change the card with one of their own, and then return 1 card to the Deck.",
       "counteraction": null
     },
     {
       "id": "c4",
       "name": "Writer",
-      "action": "Active player takes 1 random card from the Deck and looks at it. They may then pay (1-isk) to the Treasury to take an additional card from the deck, and look at it. They may repeat that process as often as they choose, paying (1-isk) for each additional card. They may secretly change any cards with their own, and then return as many as cards as they took back to the Deck.",
+      "action": "Active player takes 1 random card from the Deck and looks at it. They may then pay ①  to the Treasury to take an additional card from the deck, and look at it. They may repeat that process as often as they choose, paying ①  for each additional card. They may secretly change any cards with their own, and then return as many as cards as they took back to the Deck.",
       "counteraction": null
     }
   ],
@@ -35,31 +35,31 @@
     {
       "id": "f0",
       "name": "Crime Boss",
-      "action": "Active player declares a Target. Target can choose to give the active player (2-isk) and the turn ends. If not, the active player must pay (5-isk) to the Treasury and the Target loses a life. The active player must have (5-isk) to take this action.",
+      "action": "Active player declares a Target. Target can choose to give the active player ②  and the turn ends. If not, the active player must pay ⑤  to the Treasury and the Target loses a life. The active player must have ⑤  to take this action.",
       "counteraction": null
     },
     {
       "id": "f1",
       "name": "General",
-      "action": "Active player pays (5-isk) to the Treasury. All other players become Targets and lose a life",
+      "action": "Active player pays ⑤  to the Treasury. All other players become Targets and lose a life",
       "counteraction": "Target may claim General to avoid losing a life"
     },
     {
       "id": "f2",
       "name": "Guerrilla",
-      "action": "Active player pays (4-isk) and declares Target. Target loses a life.",
+      "action": "Active player pays ④  and declares Target. Target loses a life.",
       "counteraction": "Target may claim Guerrilla to avoid losing a life"
     },
     {
       "id": "f3",
       "name": "Judge",
-      "action": "Active Player declares a Target and gives Target (3-isk). Target loses a life.",
-      "counteraction": "Target may claim judge to avoid losing a life, keeping the (3-isk) given"
+      "action": "Active Player declares a Target and gives Target ③ . Target loses a life.",
+      "counteraction": "Target may claim judge to avoid losing a life, keeping the ③  given"
     },
     {
       "id": "f4",
       "name": "Mercenary",
-      "action": "Active player pays (3-isk) to the Treasury and declares a Target. Target places the Disappear token in front of themselves. If the Target still has the Disappear token at the end of their next turn, they lose a life and then discard the token.",
+      "action": "Active player pays ③  to the Treasury and declares a Target. Target places the Disappear token in front of themselves. If the Target still has the Disappear token at the end of their next turn, they lose a life and then discard the token.",
       "counteraction": "Target may claim Mercenary when they are targeted, or at any time on their next turn to avoid losing a life. They discard the Disappear token if counteracted."
     }
   ],
@@ -67,31 +67,31 @@
     {
       "id": "$0",
       "name": "Banker",
-      "action": "Active player takes (3-isk) from the Treasury.",
+      "action": "Active player takes ③  from the Treasury.",
       "counteraction": null
     },
     {
       "id": "$1",
       "name": "Capitalist",
-      "action": "Active player first takes (4-isk) from the Treasury. Then any other players may also claim Capitalist. Once all claims have been made, challenges are resolved for new claimants in clockwise order from the active player. Then the active player must give (1-isk) to each surviving Capitalist claimant.",
+      "action": "Active player first takes ④  from the Treasury. Then any other players may also claim Capitalist. Once all claims have been made, challenges are resolved for new claimants in clockwise order from the active player. Then the active player must give ①  to each surviving Capitalist claimant.",
       "counteraction": null
     },
     {
       "id": "$2",
       "name": "Farmer",
-      "action": "Active player takes (3-isk) from the Treasury and must then give (1-isk) to another player of their choice.",
+      "action": "Active player takes ③  from the Treasury and must then give ①  to another player of their choice.",
       "counteraction": null
     },
     {
       "id": "$3",
       "name": "Speculator",
-      "action": "Active player takes as many coins from the Treasury as they have already - maximum of (5-isk). If the Speculator is successfully challenged, the coins taken from the Treasury are returned and then the challenger takes all active player's coins.",
+      "action": "Active player takes as many coins from the Treasury as they have already - maximum of ⑤ . If the Speculator is successfully challenged, the coins taken from the Treasury are returned and then the challenger takes all active player's coins.",
       "counteraction": null
     },
     {
       "id": "$4",
       "name": "Spy",
-      "action": "Active player takes (1-isk) from the Treasury and can then take an additional action of their choice. They cannot take the intel action again this turn.\nIf a player starts a  turn with 10 or more coins(isk), they must take the Coup action and may not claim spy before doing so. If a player takes the intel action and then has10 coins(isk) - they must take the Coup action as their additional action.",
+      "action": "Active player takes ①  from the Treasury and can then take an additional action of their choice. They cannot take the intel action again this turn.\nIf a player starts a  turn with 10 or more coins, they must take the Coup action and may not claim spy before doing so. If a player takes the intel action and then has 10 coins - they must take the Coup action as their additional action.",
       "counteraction": null
     }
   ],
@@ -99,13 +99,13 @@
     {
       "id": "s0",
       "name": "Communist",
-      "action": "Active player takes up to (3-isk) from the player with the most coins (Target) and gives the taken coins to the player with the fewest coins. In the event of a tie for most or fewest coins, the active player decides who is the Target.",
+      "action": "Active player takes up to ③  from the player with the most coins (Target) and gives the taken coins to the player with the fewest coins. In the event of a tie for most or fewest coins, the active player decides who is the Target.",
       "counteraction": "Target may claim Communist to avoid giving any coins."
     },
     {
       "id": "s1",
       "name": "Customs Officer",
-      "action": "Active player takes both tax tokens, placing one in front of themselves and one on a role card in play. Before any player can claim the role (for either an action or counteraction) that has the Tax token on it, they must first give (1-isk) to the player with the Tax  token - if they do not have a coin to give, they may not claim that role. If the player that has the Tax token is eliminated, remove  the Tax token from the role card.",
+      "action": "Active player takes both tax tokens, placing one in front of themselves and one on a role card in play. Before any player can claim the role (for either an action or counteraction) that has the Tax token on it, they must first give ①  to the player with the Tax  token - if they do not have a coin to give, they may not claim that role. If the player that has the Tax token is eliminated, remove  the Tax token from the role card.",
       "counteraction": null
     },
     {
@@ -117,7 +117,7 @@
     {
       "id": "s3",
       "name": "Intellectual",
-      "action": "When a player loses a life for any reason, they may claim the Intellectual. The card claimed to be the Intellectual is put aside face-down as the lost life and that player takes (5-isk) from the Treasury. If challenged the card claimed as the Intellectual is revealed. If the card is not the intellectual, the player that claimed the intellectual loses another life (and does not take (5-isk) from the Treasury). If the card is the Intellectual, the challenger loses a life.",
+      "action": "When a player loses a life for any reason, they may claim the Intellectual. The card claimed to be the Intellectual is put aside face-down as the lost life and that player takes ⑤  from the Treasury. If challenged the card claimed as the Intellectual is revealed. If the card is not the intellectual, the player that claimed the intellectual loses another life (and does not take ⑤  from the Treasury). If the card is the Intellectual, the challenger loses a life.",
       "counteraction": null
     },
     {
@@ -135,25 +135,25 @@
     {
       "id": "s6",
       "name": "Peacekeeper",
-      "action": "Active player takes (1-isk) from the Treasury and then places the Peacekeeping token in front of themselves. While the Peacekeeping token is front of a player, that player cannot be targeted. This does not prevent coup actions nor preclude challenges.",
+      "action": "Active player takes ①  from the Treasury and then places the Peacekeeping token in front of themselves. While the Peacekeeping token is front of a player, that player cannot be targeted. This does not prevent coup actions nor preclude challenges.",
       "counteraction": null
     },
     {
       "id": "s7",
       "name": "Politician",
-      "action": "Active player declares Target and takes up to (2-isk) from the Target.",
+      "action": "Active player declares Target and takes up to ②  from the Target.",
       "counteraction": "Target may claim politician to avoid giving any coins."
     },
     {
       "id": "s8",
       "name": "Priest",
-      "action": "When active player claims Priest, all other players become Targets and have to give (1-isk) to the active player.",
-      "counteraction": "Target may claim Priest to avoid giving (1-isk) to the active player."
+      "action": "When active player claims Priest, all other players become Targets and have to give ①  to the active player.",
+      "counteraction": "Target may claim Priest to avoid giving ①  to the active player."
     },
     {
       "id": "s9",
       "name": "Protestor",
-      "action": "Active player pays (2-isk) to the Treasury and declares Target. Any player may challenge, if not successfully challenged then any other player can pay (3-isk) to the Treasury to join the riot and the Target loses a life. The player joining the Riot does not have to claim Protestor, If no other player joins the Riot, the action fails without coins being returned.",
+      "action": "Active player pays ②  to the Treasury and declares Target. Any player may challenge, if not successfully challenged then any other player can pay ③  to the Treasury to join the riot and the Target loses a life. The player joining the Riot does not have to claim Protestor, If no other player joins the Riot, the action fails without coins being returned.",
       "counteraction": "After both players have joined the Riot, the Target may claim Protestor to avoid losing a life."
     }
   ]
