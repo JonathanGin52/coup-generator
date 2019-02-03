@@ -8,10 +8,25 @@ const { communications, force, finance, specialInterest } = cards;
 // Functions
 const { log } = console;
 
+const game = [
+  {"c": communications},
+  {"f": force},
+  {"$": finance},
+  {"s": specialInterest},
+  {"s": specialInterest},
+];
+  
+
 const random = (n) => Math.floor(Math.random() * n); 
 
 const generateGameSeed = () => {
-  return `c${random(communications.length)}f${random(force.length)}$${random(finance.length)}s${random(specialInterest.length)}s${random(specialInterest.length)}`;
+  var s = "";
+  for (const character of game) {
+    for (const symbol in character) {
+      s += `${symbol}${random(character[symbol].length)}`
+    }
+  }
+  return s;
 }
 
 const shuffle = (array) => {
