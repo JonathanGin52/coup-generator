@@ -1,7 +1,7 @@
 const { communications, force, finance, specialInterest } = require('../data/cards.json');
+const { underline } = require('cli-color');
 const formatOutput = require('../util/format');
 const error = require('../util/error');
-const { underline } = require('cli-color');
 
 module.exports = (seed) => {
   console.log(`Your game seed is ${underline(seed)}`);
