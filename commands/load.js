@@ -1,9 +1,10 @@
 const { communications, force, finance, specialInterest } = require('../data/cards.json');
 const formatOutput = require('../util/format');
 const error = require('../util/error');
+const { underline } = require('cli-color');
 
 module.exports = (seed) => {
-  console.log(`Your game seed is ${seed}`);
+  console.log(`Your game seed is ${underline(seed)}`);
   const deck = [];
 
   seed.toString().split('').forEach((id, index) => {
