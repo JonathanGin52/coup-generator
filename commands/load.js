@@ -1,4 +1,5 @@
 const { communications, force, finance, specialInterest } = require('../data/cards.json');
+const formatOutput = require('../util/format');
 const log = console.log;
 
 module.exports = (args) => {
@@ -30,6 +31,6 @@ module.exports = (args) => {
         break;
     }
   });
-  log(deck);
+  formatOutput(deck);
 };
 
