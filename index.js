@@ -8,9 +8,11 @@ module.exports = () => {
 
   switch (cmd) {
     case 'generate':
+    case 'g':
       generate();
       break;
     case 'load':
+    case 'l':
       load(args);
       break;
     default:
