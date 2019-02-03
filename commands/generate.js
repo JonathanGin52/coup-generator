@@ -18,14 +18,12 @@ Array.prototype.sample = function(count = 1) {
 }
 
 module.exports = (args) => {
-  console.log('generating game');
+  const deck = {};
 
-  const deck = [];
-
-  deck.push(communications.sample());
-  deck.push(force.sample());
-  deck.push(finance.sample());
-  deck.push(specialInterest.sample(2));
+  deck.communications = communications.sample();
+  deck.force = force.sample();
+  deck.finance = finance.sample();
+  deck.specialInterest = specialInterest.sample(2);
 
   console.log(deck);
 };
