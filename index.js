@@ -3,18 +3,17 @@ const generate = require('./commands/generate');
 const load = require('./commands/load');
 
 module.exports = () => {
-  const args = minimist(process.argv.slice(2));
-  let cmd = args._[0] || 'generate';
+  const args = minimist(process.argv.slice(2), {
+    string: 'load',           // --load seed
+    boolean: [ 'generate' ],
+  });
+  console.log(args);
 
-  switch (cmd) {
-    case 'generate':
-      generate();
-      break;
-    case 'load':
-      load(args);
-      break;
-    default:
-      console.error(`"${cmd}" is not a valid command!`);
-      break;
+  if (args.load || args.l) {
+    load(args.load);
+  } else if (args.generate) {
+    generate();
+  } else {
+    console.log('nothing');
   }
 };
