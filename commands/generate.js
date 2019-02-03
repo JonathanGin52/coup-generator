@@ -19,6 +19,7 @@ Array.prototype.sample = function(count = 1) {
 
 module.exports = (args) => {
   let deck = [];
+  let seed = "";
 
   deck.push(communications.sample());
   deck.push(force.sample());
@@ -36,5 +37,10 @@ module.exports = (args) => {
     console.log("Action: " + deck[i].action);
     deck[i].counteraction && console.log("Counteraction: " + deck[i].counteraction);
   }
+
+  // Generate game seed
+  deck.forEach((card) => seed += card.id);
+  log(`Your game seed is '${seed}.'`);
+
 };
 
