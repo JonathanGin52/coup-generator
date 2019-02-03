@@ -5,6 +5,7 @@ const load = require('./commands/load');
 module.exports = () => {
   const args = minimist(process.argv.slice(2));
   let cmd = args._[0] || 'generate';
+  console.log(args);
 
   switch (cmd) {
     case 'generate':
