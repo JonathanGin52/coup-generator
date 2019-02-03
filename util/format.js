@@ -6,7 +6,7 @@ const cards = ['Communications', 'Force', 'Finance', 'Special Interest', 'Specia
 
 module.exports = (deck) => {
   for (let i = 0; i < cards.length; i++) {
-    console.log(game[cards[i]].colour(cards[i]));
+    console.log(game[cards[i]].colour(`${cards[i]}: ${deck[i].name}`));
     console.log(bold('Action: ') + deck[i].action);
     deck[i].counteraction && console.log(bold('Counteraction: ') + deck[i].counteraction);
   }
