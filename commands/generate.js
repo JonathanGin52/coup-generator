@@ -8,6 +8,12 @@ const { communications, force, finance, specialInterest } = cards;
 // Functions
 const { log } = console;
 
+const random = (n) => Math.floor(Math.random() * n); 
+
+const generateGameSeed = () => {
+  return `c${random(communications.length)}f${random(force.length)}$${random(finance.length)}s${random(specialInterest.length)}s${random(specialInterest.length)}`;
+}
+
 const shuffle = (array) => {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -21,6 +27,8 @@ Array.prototype.sample = function(count = 1) {
 }
 
 module.exports = (args) => {
+  const gameSeed = generateGameSeed();
+  log(gameSeed);
   let deck = [];
 
   deck.push(communications.sample());
