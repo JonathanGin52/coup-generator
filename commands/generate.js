@@ -13,7 +13,7 @@ const shuffle = (array) => {
 
 Array.prototype.sample = function(count = 1) {
   return shuffle(this).slice(0, count);
-}
+};
 
 module.exports = (args) => {
   log('generating game');
