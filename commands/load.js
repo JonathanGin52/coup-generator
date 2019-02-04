@@ -7,7 +7,7 @@ module.exports = (seed) => {
   console.log(`Your game seed is ${underline(seed)}`);
   const deck = [];
 
-  seed.toString().split('').forEach((id, index) => {
+  seed.split('').forEach((id, index) => {
     switch (index) {
       case 0:
         deck.push(communications[id]);

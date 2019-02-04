@@ -4,7 +4,9 @@ const load = require('./commands/load');
 const error = require('./util/error');
 
 module.exports = () => {
-  const args = minimist(process.argv.slice(2));
+  const args = minimist(process.argv.slice(2), {
+    string: [ 'seed', 's' ],
+  });
   let cmd = args._[0] || 'generate';
 
   switch (cmd) {
