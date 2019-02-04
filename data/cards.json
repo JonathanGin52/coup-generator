@@ -76,7 +76,7 @@
     },
     {
       "name": "Spy",
-      "action": "Active player takes ⓵  from the Treasury and can then take an additional action of their choice. They cannot take the intel action again this turn.\nIf a player starts a  turn with 10 or more coins, they must take the Coup action and may not claim spy before doing so. If a player takes the intel action and then has 10 coins - they must take the Coup action as their additional action.",
+      "action": "Active player takes ⓵  from the Treasury and can then take an additional action of their choice. They cannot take the intel action again this turn.\nIf a player starts a turn with 10 or more coins, they must take the Coup action and may not claim spy before doing so. If a player takes the intel action and then has 10 coins - they must take the Coup action as their additional action.",
       "counteraction": null
     }
   ],
