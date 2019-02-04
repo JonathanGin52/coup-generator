@@ -4,25 +4,25 @@ const { red, yellow, magenta, cyan, white } = require('cli-color');
 const game = {
   'Communications': {
     count: 1,
-    real: ['Captain'],
+    alias: ['Captain'],
     colour: cyan,
     cards: communications,
   },
   'Force': {
     count: 1,
-    real: ['Assassin'],
+    alias: ['Assassin'],
     colour: yellow,
     cards: force,
   },
   'Finance': {
     count: 1,
-    real: ['Duke'],
+    alias: ['Duke'],
     colour: red,
     cards: finance,
   },
   'Special Interest': {
     count: 2,
-    real: ['Contessa', 'Ambassador'],
+    alias: ['Contessa', 'Ambassador'],
     colour: magenta,
     cards: specialInterest,
   },
