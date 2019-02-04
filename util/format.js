@@ -2,13 +2,16 @@
 const { bold } = require('cli-color');
 const game = require('./game');
 
-const cards = ['Communications', 'Force', 'Finance', 'Special Interest', 'Special Interest'];
-
 module.exports = (deck) => {
-  for (let i = 0; i < cards.length; i++) {
-    console.log(game[cards[i]].colour(`${cards[i]}: ${deck[i].name}`));
-    console.log(bold('Action: ') + deck[i].action);
-    deck[i].counteraction && console.log(bold('Counteraction: ') + deck[i].counteraction);
+  let cardIndex = 0;
+  for (let card in game) {
+    for (let repetitions = 0; repetitions< game[card].repetitions; repetitions++) {
+      let i = cardIndex + repetitions;
+      console.log(game[card].colour(`${card}: ${deck[i].name}`));
+      console.log(bold('Action: ') + deck[i].action);
+      deck[i].counteraction && console.log(bold('Counteraction: ') + deck[i].counteraction);
+    }
+    cardIndex++;
   }
 };
 
