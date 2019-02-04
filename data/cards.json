@@ -108,7 +108,7 @@
     },
     {
       "name": "Missionary",
-      "action": "When a player loses a life for any reason other than a Coup, they may claim the Missionary If the deck has at least one card. The card claimed to be Missionary is put aside face-down as the lost life and that player takes 1 card from the deck. If challenged, the card claimed as the Missionary is revealed. If the card is not the Missionary, the player that claimed the Missionary loses another life (and does not take 1 card from the deck) - they may claim Missionary on the second life lost to avoid being eliminated. If the card is the Missionary, the challenger loses a life.",
+      "action": "When a player loses a life for any reason other than a Coup, they may claim the Missionary if the deck has at least one card. The card claimed to be Missionary is put aside face-down as the lost life and that player takes 1 card from the deck. If challenged, the card claimed as the Missionary is revealed. If the card is not the Missionary, the player that claimed the Missionary loses another life (and does not take 1 card from the deck) - they may claim Missionary on the second life lost to avoid being eliminated. If the card is the Missionary, the challenger loses a life.",
       "counteraction": null
     },
     {
@@ -128,7 +128,7 @@
     },
     {
       "name": "Protestor",
-      "action": "Active player pays ⓶  to the Treasury and declares Target. Any player may challenge, if not successfully challenged then any other player can pay ⓷  to the Treasury to join the riot and the Target loses a life. The player joining the Riot does not have to claim Protestor, If no other player joins the Riot, the action fails without coins being returned.",
+      "action": "Active player pays ⓶  to the Treasury and declares Target. Any player may challenge, if not successfully challenged then any other player can pay ⓷  to the Treasury to join the riot and the Target loses a life. The player joining the Riot does not have to claim Protestor, if no other player joins the Riot, the action fails without coins being returned.",
       "counteraction": "After both players have joined the Riot, the Target may claim Protestor to avoid losing a life."
     }
   ]
