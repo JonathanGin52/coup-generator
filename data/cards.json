@@ -2,27 +2,27 @@
   "communications": [
     {
       "name": "Director",
-      "action": "Active player takes 2 random cards from the Deck. They may Secretly Change any cards with their own, and then return 2 cards to the Deck.",
+      "action": "Active player takes 2 random cards from the deck. They may secretly change any cards with their own, and then return 2 cards to the deck.",
       "counteraction": null
     },
     {
       "name": "Newscaster",
-      "action": "Active player pays ⓵  to the treasury, then takes 3 random cards from the Deck. They may secretly change any cards with their own, and then return 3 cards to the Deck.",
+      "action": "Active player pays ⓵  to the treasury, then takes 3 random cards from the deck. They may secretly change any cards with their own, and then return 3 cards to the deck.",
       "counteraction": null
     },
     {
       "name": "Producer",
-      "action": "Active player takes 1 random card from the deck and 1 card from target (target's choice). The active player may secretly change any cards with their own, and then return 1 card to the deck and 1 card to the target player.",
+      "action": "Active player takes 1 random card from the deck and 1 card from Target (Target's choice). The active player may secretly change any cards with their own, and then return 1 card to the deck and 1 card to the Target player.",
       "counteraction": "Target may claim Producer to avoid giving (and then receiving) one of their cards."
     },
     {
       "name": "Reporter",
-      "action": "Active player takes 1 random card from the Deck and ⓵  from the Treasury. They may secretly change the card with one of their own, and then return 1 card to the Deck.",
+      "action": "Active player takes 1 random card from the deck and ⓵  from the Treasury. They may secretly change the card with one of their own, and then return 1 card to the deck.",
       "counteraction": null
     },
     {
       "name": "Writer",
-      "action": "Active player takes 1 random card from the Deck and looks at it. They may then pay ⓵  to the Treasury to take an additional card from the deck, and look at it. They may repeat that process as often as they choose, paying ⓵  for each additional card. They may secretly change any cards with their own, and then return as many as cards as they took back to the Deck.",
+      "action": "Active player takes 1 random card from the deck and looks at it. They may then pay ⓵  to the Treasury to take an additional card from the deck, and look at it. They may repeat that process as often as they choose, paying ⓵  for each additional card. They may secretly change any cards with their own, and then return as many as cards as they took back to the deck.",
       "counteraction": null
     }
   ],
@@ -108,7 +108,7 @@
     },
     {
       "name": "Missionary",
-      "action": "When a player loses a life for any reason other than a Coup, they may claim the Missionary If the Deck has at least one card. The card claimed to be Missionary is put aside face-down as the lost life and that player takes 1 card from the Deck. If challenged, the card claimed as the Missionary is revealed. If the card is not the Missionary, the player that claimed the Missionary loses another life (and does not take 1 card from the Deck) - they may claim Missionary on the second life lost to avoid being eliminated. If the card is the Missionary, the challenger loses a life.",
+      "action": "When a player loses a life for any reason other than a Coup, they may claim the Missionary If the deck has at least one card. The card claimed to be Missionary is put aside face-down as the lost life and that player takes 1 card from the deck. If challenged, the card claimed as the Missionary is revealed. If the card is not the Missionary, the player that claimed the Missionary loses another life (and does not take 1 card from the deck) - they may claim Missionary on the second life lost to avoid being eliminated. If the card is the Missionary, the challenger loses a life.",
       "counteraction": null
     },
     {
