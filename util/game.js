@@ -1,5 +1,5 @@
 const { communications, force, finance, specialInterest } = require('../data/cards.json');
-const { red, yellow, magenta, cyan, white } = require('cli-color');
+const { red, yellow, magenta, cyan } = require('cli-color');
 
 const game = {
   'Communications': {

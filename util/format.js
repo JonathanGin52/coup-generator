@@ -1,7 +1,7 @@
 // NPM modules
 const game = require('./game');
 const { bold } = require('cli-color');
-const log = console.log;
+const { log }= console;
 const horizontalLine = () => '—'.repeat(process.stdout.columns);
 
 module.exports = (deck) => {
@@ -27,4 +27,4 @@ module.exports.printCards = (cards) => {
     card.counteraction && log(`${bold('Counteraction:')} ${card.counteraction}`);
   }
   log(horizontalLine());
-}
+};

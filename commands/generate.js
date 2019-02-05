@@ -1,4 +1,3 @@
-const { communications, force, finance, specialInterest } = require('../data/cards.json');
 const load = require('./load');
 const game = require('../util/game.js');
 
@@ -23,5 +22,5 @@ const generateGameSeed = () => {
   return seed;
 };
 
-module.exports = (args) => load(generateGameSeed());
+module.exports = () => load(generateGameSeed());
 
