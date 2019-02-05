@@ -23,6 +23,7 @@ module.exports = () => {
     case 'help':
     case 'h':
       help();
+      break;
     default:
       error(`"${cmd}" is not a valid command!`, true);
       break;
