@@ -19,7 +19,7 @@ module.exports = (deck) => {
   log(horizontalLine());
 };
 
-module.exports.printCard = (cards) => {
+module.exports.printCards = (cards) => {
   for (card of cards) {
     log(horizontalLine());
     log(`${bold('Influence:')} ${card.name}`);
