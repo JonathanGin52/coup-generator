@@ -32,9 +32,6 @@ module.exports = (seed) => {
       case 4:
         deck.push(specialInterest[id]);
         break;
-      default:
-        error(ERROR.LENGTH, true);
-        break;
     }
   });
   formatOutput(deck);
