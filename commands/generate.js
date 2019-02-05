@@ -19,8 +19,6 @@ const generateGameSeed = () => {
       seed += newSeed;
       last = newSeed;
 
-      console.log(seed);
-      console.log(newSeed);
     }
   }
   return seed;
