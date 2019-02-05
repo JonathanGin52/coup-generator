@@ -13,26 +13,26 @@ module.exports = () => {
   let cmd = args._[0] || 'generate';
 
   switch (cmd) {
-  case 'generate':
-  case 'g':
-    generate();
-    break;
-  case 'load':
-  case 'l':
-    const seed = args.s || args.seed;
-    load(seed);
-    break;
-  case 'help':
-  case 'h':
-    help();
-    break;
-  case 'explain':
-  case 'e':
-    explain(args._[1]);
-    break;
-  default:
-    error(`"${cmd}" is not a valid command!`, true);
-    break;
+    case 'generate':
+    case 'g':
+      generate();
+      break;
+    case 'load':
+    case 'l':
+      const seed = args.s || args.seed;
+      load(seed);
+      break;
+    case 'help':
+    case 'h':
+      help();
+      break;
+    case 'explain':
+    case 'e':
+      explain(args._[1]);
+      break;
+    default:
+      error(`"${cmd}" is not a valid command!`, true);
+      break;
   }
 };
 

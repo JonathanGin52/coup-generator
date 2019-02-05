@@ -18,22 +18,22 @@ module.exports = (seed) => {
 
   seedArray.forEach((id, index) => {
     switch (index) {
-    case 0:
-      id > RANGE.MAXIMUM && error(ERROR.RANGE, true);
-      deck.push(communications[id]);
-      break;
-    case 1:
-      id > RANGE.MAXIMUM && error(ERROR.RANGE, true);
-      deck.push(force[id]);
-      break;
-    case 2:
-      id > RANGE.MAXIMUM && error(ERROR.RANGE, true);
-      deck.push(finance[id]);
-      break;
-    case 3:
-    case 4:
-      deck.push(specialInterest[id]);
-      break;
+      case 0:
+        id > RANGE.MAXIMUM && error(ERROR.RANGE, true);
+        deck.push(communications[id]);
+        break;
+      case 1:
+        id > RANGE.MAXIMUM && error(ERROR.RANGE, true);
+        deck.push(force[id]);
+        break;
+      case 2:
+        id > RANGE.MAXIMUM && error(ERROR.RANGE, true);
+        deck.push(finance[id]);
+        break;
+      case 3:
+      case 4:
+        deck.push(specialInterest[id]);
+        break;
     }
   });
   formatOutput(deck);

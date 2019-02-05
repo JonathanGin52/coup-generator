@@ -1,7 +1,7 @@
 // NPM modules
 const game = require('./game');
 const { bold } = require('cli-color');
-const log = console.log;
+const { log }= console;
 const horizontalLine = () => '—'.repeat(process.stdout.columns);
 
 module.exports = (deck) => {
