@@ -18,10 +18,11 @@ module.exports = () => {
       generate();
       break;
     case 'load':
-    case 'l':
+    case 'l': {
       const seed = args.s || args.seed;
       load(seed);
       break;
+    }
     case 'help':
     case 'h':
       help();
