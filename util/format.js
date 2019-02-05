@@ -20,10 +20,6 @@ module.exports = (deck) => {
 };
 
 module.exports.printCard = (card) => {
-  if (!card) {
-    return log(`No card found.`);
-  }
-  log(horizontalLine());
   log(`${bold('Influence:')} ${card.name}`);
   log(`${bold('Action:')} ${card.action}`);
   card.counteraction && log(`${bold('Counteraction:')} ${card.counteraction}`);
