@@ -7,10 +7,10 @@ const RANGE = {
 
 const ERROR = {
   RANGE: `First three digits of seed must be less than ${RANGE.MAXIMUM}.`,
-  PARSE: `Seed must contain only digits.`,
+  PARSE: 'Seed must contain only digits.',
   LENGTH: `Seed must be ${SEED_LENGTH} digits long.`,
-  DUPLICATION: `Last two digits of seed cannot be the same.`,
-  NO_SEED: `Seed must be provided.`
+  DUPLICATION: 'Last two digits of seed cannot be the same.',
+  NO_SEED: 'Seed must be provided.'
 };
 
 module.exports = { SEED_LENGTH, RANGE, ERROR };

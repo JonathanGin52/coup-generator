@@ -27,4 +27,4 @@ module.exports.printCards = (cards) => {
     card.counteraction && log(`${bold('Counteraction:')} ${card.counteraction}`);
   }
   log(horizontalLine());
-}
+};
