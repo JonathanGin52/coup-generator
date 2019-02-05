@@ -17,3 +17,9 @@ module.exports = (deck) => {
     cardIndex++;
   }
 };
+
+module.exports.printCard = (card) => {
+  log(horizontalLine());
+  log(card);
+  log(horizontalLine());
+}
