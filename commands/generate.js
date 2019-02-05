@@ -6,9 +6,18 @@ const random = (n) => Math.floor(Math.random() * n);
 
 const generateGameSeed = () => {
   let seed = '';
+
   for (const character in game) {
+    let last = '';
     for (let i = 0; i < game[character]['count']; i++) {
-      seed += random(game[character]['cards'].length);
+      let newSeed = random(game[character]['cards'].length);
+
+      while (newSeed === last) {
+        newSeed = random(game[character]['cards'].length);
+      }
+      last = newSeed;
+      seed += newSeed;
+
     }
   }
   return seed;
