@@ -16,4 +16,15 @@ module.exports = (deck) => {
     }
     cardIndex++;
   }
+  log(horizontalLine());
 };
+
+module.exports.printCards = (cards) => {
+  for (let card of cards) {
+    log(horizontalLine());
+    log(`${bold('Influence:')} ${card.name}`);
+    log(`${bold('Action:')} ${card.action}`);
+    card.counteraction && log(`${bold('Counteraction:')} ${card.counteraction}`);
+  }
+  log(horizontalLine());
+}
