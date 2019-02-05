@@ -4,7 +4,7 @@ This command line interface allows you to generate coup games with special chara
 ### Installation
 To install this module from npm type the following command.
 ```bash
-$ npm i -g coup
+$ npm install --global coup
 ```
 ### Usage
 #### Generate
