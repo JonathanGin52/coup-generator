@@ -2,7 +2,7 @@ const { communications, force, finance, specialInterest } = require('../data/car
 const { underline } = require('cli-color');
 const formatOutput = require('../util/format');
 const error = require('../util/error');
-const { SEED_LENGTH, RANGE_MINIMUM, RANGE_MAXIMUM, RANGE_ERROR, PARSE_ERROR, LENGTH_ERROR } = require('../util/validation');
+const { SEED_LENGTH, RANGE_MINIMUM, RANGE_MAXIMUM, RANGE_ERROR, PARSE_ERROR, LENGTH_ERROR, DUPLICATION_ERROR } = require('../util/validation');
 
 module.exports = (seed) => {
   console.log(`Your game seed is ${underline(seed)}`);
@@ -12,6 +12,7 @@ module.exports = (seed) => {
   // Validate game seed
   seed.length !== SEED_LENGTH && error(LENGTH_ERROR, true);
   !/^\d+$/.test(seed) && error(PARSE_ERROR, true);
+  seedArray[SEED_LENGTH - 1] == seedArray[SEED_LENGTH - 2] && error(DUPLICATION_ERROR, true);
 
   seedArray.forEach((id, index) => {
     switch (index) {
