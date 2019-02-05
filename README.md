@@ -1,4 +1,6 @@
 # Coup Rebellion Game Generator
+[![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
+
 This command line interface allows you to generate coup games with special characters available in the Coup Rebellion G54 Game.
 
 ### Installation
