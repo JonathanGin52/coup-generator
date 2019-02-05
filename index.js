@@ -1,6 +1,7 @@
 const minimist = require('minimist');
 const generate = require('./commands/generate');
 const load = require('./commands/load');
+const help = require('./commands/help');
 const error = require('./util/error');
 
 module.exports = () => {
@@ -19,6 +20,9 @@ module.exports = () => {
       const seed = args.s || args.seed;
       load(seed);
       break;
+    case 'help':
+    case 'h':
+      help();
     default:
       error(`"${cmd}" is not a valid command!`, true);
       break;
