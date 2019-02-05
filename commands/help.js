@@ -1,5 +1,8 @@
 const log = console.log;
 
-log('Coup generator possible commands: ');
-log('    generate - generates a random coup game and outputs a seed');
-log('    load <game-seed> - generates a random coup game and outputs a seed');
+module.exports = () => {
+  log('Coup generator possible commands:');
+  log('    help                    - Shows possible commands');
+  log('    generate                - generates a random coup game and outputs a seed');
+  log('    load --seed <game-seed> - loads a coup game from the given seed');
+}
