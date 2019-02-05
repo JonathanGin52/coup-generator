@@ -8,22 +8,20 @@ const generateGameSeed = () => {
   let seed = '';
 
   for (const character in game) {
-
     let last = '';
-
     for (let i = 0; i < game[character]['count']; i++) {
       let newSeed = random(game[character]['cards'].length);
 
       while (newSeed === last) {
         newSeed = random(game[character]['cards'].length);
       }
-
-      seed += newSeed;
       last = newSeed;
+      seed += newSeed;
 
     }
   }
   return seed;
 };
+
 module.exports = (args) => load(generateGameSeed());
 
