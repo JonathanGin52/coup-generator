@@ -10,6 +10,7 @@ const ERROR = {
   PARSE: `Seed must contain only digits.`,
   LENGTH: `Seed must be ${SEED_LENGTH} digits long.`,
   DUPLICATION: `Last two digits of seed cannot be the same.`,
+  NO_SEED: `Seed must be provided.`
 };
 
 module.exports = { SEED_LENGTH, RANGE, ERROR };
