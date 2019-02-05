@@ -6,13 +6,14 @@ const error = require('../util/error');
 module.exports = (seed) => {
   console.log(`Your game seed is ${underline(seed)}`);
   const deck = [];
+  const seedArray = seed.split('');
 
   // Validate game seed
   if (seed.length !== 5) {
-    error(`Seed length is too ${seed.length > 5 ? 'long' : 'short'}, seed length must be 5.`, true)
+    error(`Seed length is too ${seed.length > 5 ? 'long' : 'short'}, seed length must be 5.`, true);
   }
 
-  seed.split('').forEach((id, index) => {
+  seedArray.forEach((id, index) => {
     switch (index) {
       case 0:
         deck.push(communications[id]);
