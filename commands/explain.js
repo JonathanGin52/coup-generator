@@ -10,4 +10,4 @@ module.exports = (character) => {
 
   character = new RegExp(character, 'i');
   printCards(cards.filter(card => card.name.match(character)));
-}
+};
