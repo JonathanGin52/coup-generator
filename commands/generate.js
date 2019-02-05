@@ -11,16 +11,17 @@ const generateGameSeed = () => {
     let last = '';
 
     for (let i = 0; i < game[character]['count']; i++) {
+      let newSeed = random(game[character]['cards'].length);
 
-      while (true){
-        seed += random(game[character]['cards'].length);
-        if (seed != last){
-          break;
-        seed = last;
-
+      while (newSeed === last) {
+        newSeed = random(game[character]['cards'].length);
       }
+      seed += newSeed;
+      last = newSeed;
+
+      console.log(seed);
+      console.log(newSeed);
     }
-  }
   }
   return seed;
 };
