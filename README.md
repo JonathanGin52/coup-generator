@@ -4,7 +4,7 @@ This command line interface allows you to generate coup games with special chara
 ### Installation
 To install this module from npm type the following command.
 ```bash
-$ npm install -g coup
+$ npm i -g coup
 ```
 ### Usage
 #### Generate
@@ -18,9 +18,9 @@ This command will also print out a game seed which you can send to other players
 #### Load
 After you or a player generates a game, a game seed will be provided. To view the same cards as the original generation, type the following command.
 ```bash
-$ coup load c2f0$4s0s5
+$ coup load --seed <game-seed>
 ```
-Where `c2f0$4s0s5` is the game seed.
+Where `game-seed` is a 5 digit number representing a specific game setup.
 
 ### Contribution
 This project is open source, all improvements to the CLI are welcome 🙌.
