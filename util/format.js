@@ -19,9 +19,12 @@ module.exports = (deck) => {
   log(horizontalLine());
 };
 
-module.exports.printCard = (card) => {
-  log(`${bold('Influence:')} ${card.name}`);
-  log(`${bold('Action:')} ${card.action}`);
-  card.counteraction && log(`${bold('Counteraction:')} ${card.counteraction}`);
+module.exports.printCard = (cards) => {
+  for (card of cards) {
+    log(horizontalLine());
+    log(`${bold('Influence:')} ${card.name}`);
+    log(`${bold('Action:')} ${card.action}`);
+    card.counteraction && log(`${bold('Counteraction:')} ${card.counteraction}`);
+  }
   log(horizontalLine());
 }

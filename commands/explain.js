@@ -8,5 +8,5 @@ module.exports = (character) => {
   }
 
   character = new RegExp(character, 'i');
-  printCard(cards.filter(card => card.name.match(character))[0]);
+  printCard(cards.filter(card => card.name.match(character)));
 }
