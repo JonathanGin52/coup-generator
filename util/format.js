@@ -20,7 +20,7 @@ module.exports = (deck) => {
 };
 
 module.exports.printCards = (cards) => {
-  for (card of cards) {
+  for (let card of cards) {
     log(horizontalLine());
     log(`${bold('Influence:')} ${card.name}`);
     log(`${bold('Action:')} ${card.action}`);
