@@ -29,10 +29,11 @@ module.exports = (seed) => {
         deck.push(finance[id]);
         break;
       case 3:
-        deck.push(specialInterest[id]);
-        break;
       case 4:
         deck.push(specialInterest[id]);
+        break;
+      default:
+        error(ERROR.LENGTH, true);
         break;
     }
   });
