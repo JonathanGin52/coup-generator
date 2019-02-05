@@ -12,7 +12,7 @@ module.exports = (seed) => {
   // Validate game seed
   seed.length !== SEED_LENGTH && error(ERROR.LENGTH, true);
   !/^\d+$/.test(seed) && error(ERROR.PARSE, true);
-  seedArray[SEED_LENGTH - 1] == seedArray[SEED_LENGTH - 2] && error(ERROR.DUPLICATION, true);
+  seedArray[SEED_LENGTH - 1] === seedArray[SEED_LENGTH - 2] && error(ERROR.DUPLICATION, true);
 
   seedArray.forEach((id, index) => {
     switch (index) {
