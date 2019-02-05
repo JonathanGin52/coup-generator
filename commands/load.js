@@ -5,6 +5,8 @@ const error = require('../util/error');
 const { SEED_LENGTH, RANGE, ERROR } = require('../util/validation');
 
 module.exports = (seed) => {
+  !seed && error(ERROR.NO_SEED, true);
+
   console.log(`Your game seed is ${underline(seed)}`);
   const deck = [];
   const seedArray = seed.split('');
