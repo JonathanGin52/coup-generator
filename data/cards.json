@@ -88,7 +88,7 @@
     },
     {
       "name": "Customs Officer",
-      "action": "Active player takes both tax tokens, placing one in front of themselves and one on a role card in play. Before any player can claim the role (for either an action or counteraction) that has the Tax token on it, they must first give ⓵  to the player with the Tax  token - if they do not have a coin to give, they may not claim that role. If the player that has the Tax token is eliminated, remove  the Tax token from the role card.",
+      "action": "Active player takes both tax tokens, placing one in front of themselves and one on a role card in play. Before any player can claim the role (for either an action or counteraction) that has the Tax token on it, they must first give ⓵  to the player with the Tax token - if they do not have a coin to give, they may not claim that role. If the player that has the Tax token is eliminated, remove the Tax token from the role card.",
       "counteraction": null
     },
     {
