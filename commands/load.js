@@ -7,6 +7,11 @@ module.exports = (seed) => {
   console.log(`Your game seed is ${underline(seed)}`);
   const deck = [];
 
+  // Validate game seed
+  if (seed.length !== 5) {
+    error(`Seed length is too ${seed.length > 5 ? 'long' : 'short'}, seed length must be 5.`, true)
+  }
+
   seed.split('').forEach((id, index) => {
     switch (index) {
       case 0:
@@ -23,9 +28,6 @@ module.exports = (seed) => {
         break;
       case 4:
         deck.push(specialInterest[id]);
-        break;
-      default:
-        error('Your seed is too long.', true);
         break;
     }
   });
