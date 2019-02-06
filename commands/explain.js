@@ -8,13 +8,14 @@ module.exports = (character) => {
 
   let matches = [];
 
-  for (type in game) {
-    for (card of game[type].cards) {
+  for (let type in game) {
+    for (let card of game[type].cards) {
       if (card.name.match(RegExp(character, 'i'))) {
         matches.push({ card, type });
       }
     }
   }
-  console.log(matches);
+
+  printCards(matches);
 
 };
