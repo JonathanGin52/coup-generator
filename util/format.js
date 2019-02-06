@@ -20,7 +20,7 @@ module.exports = (deck) => {
 };
 
 module.exports.printCards = (cards) => {
-  for (card of cards) {
+  for (let card of cards) {
     log(horizontalLine());
     log(game[card.type].colour(`${card.type}: ${card.card.name} (${game[card.type].alias.join(', ')})`));
     log(bold('Action: ') + card.card.action);
