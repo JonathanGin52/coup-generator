@@ -20,11 +20,11 @@ module.exports = (deck) => {
 };
 
 module.exports.printCards = (cards) => {
-  for (let card of cards) {
+  for (card of cards) {
     log(horizontalLine());
-    log(`${bold('Influence:')} ${card.name}`);
-    log(`${bold('Action:')} ${card.action}`);
-    card.counteraction && log(`${bold('Counteraction:')} ${card.counteraction}`);
+    log(game[card.type].colour(`${card.type}: ${card.card.name} (${game[card.type].alias.join(', ')})`));
+    log(bold('Action: ') + card.card.action);
+    card.card.counteraction && log(bold('Counteraction: ') + card.card.counteraction);
   }
   log(horizontalLine());
 };
