@@ -11,10 +11,11 @@ module.exports = (character) => {
   for (type in game) {
     for (card of game[type].cards) {
       if (card.name.match(RegExp(character, 'i'))) {
-        matches.push({ card, type });
+        matches.push(...card, type);
       }
     }
   }
+
   console.log(matches);
 
 };
