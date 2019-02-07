@@ -1,11 +1,11 @@
 const { communications, force, finance, specialInterest } = require('../data/cards.json');
-const { red, yellow, magenta, cyan } = require('cli-color');
+const { red, yellow, green, magenta, cyan } = require('cli-color');
 
 const game = {
   'Communications': {
     count: 1,
-    alias: ['Captain'],
-    colour: cyan,
+    alias: ['Ambassador'],
+    colour: green,
     cards: communications,
   },
   'Force': {
@@ -17,13 +17,13 @@ const game = {
   'Finance': {
     count: 1,
     alias: ['Duke'],
-    colour: red,
+    colour: magenta,
     cards: finance,
   },
   'Special Interest': {
     count: 2,
-    alias: ['Contessa', 'Ambassador'],
-    colour: magenta,
+    alias: ['Contessa', 'Captain'],
+    colour: cyan,
     cards: specialInterest,
   },
 };
