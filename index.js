@@ -1,6 +1,7 @@
 const minimist = require('minimist');
 const generate = require('./commands/generate');
 const load = require('./commands/load');
+const build = require('./commands/build');
 const help = require('./commands/help');
 const explain = require('./commands/explain');
 const error = require('./util/error');
@@ -23,6 +24,10 @@ module.exports = () => {
       load(seed);
       break;
     }
+    case 'build':
+    case 'b':
+      build();
+      break;
     case 'help':
     case 'h':
       help();
