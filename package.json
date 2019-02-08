@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint --ext .js .",
+    "lint:fix": "npm run lint --silent -- --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
