@@ -1,16 +1,19 @@
 const inquirer = require('inquirer');
 const game = require('../util/game');
 
+const prependIndexOnCards = (cards) => {
+  return cards.map( (card, index) => ({...card, name: `${index + 1}) ${card.name}`}) );
+};
+
 const buildPrompt = () => {
   const prompt = [];
-  Object.values(game).forEach((type, index) => {
-    for (let repetitions = 0; repetitions < type.count; repetitions++) {
+  Object.entries(game).forEach(([type, data]) => {
+    for (let repetitions = 0; repetitions < data.count; repetitions++) {
       prompt.push({
         type: 'list',
-        choices: type.cards,
+        choices: prependIndexOnCards(data.cards),
         message: `Select ${repetitions > 0 ? 'another' : 'a'} ${type} influence.`,
-        name: `${index + repetitions} - ${type}${repetitions > 0 ? ` ${repetitions}` : ''}`,
-        //name: `${card}${repetitions > 0 ? ` ${repetitions}` : ''}`,
+        name: `${type}${repetitions > 0 ? ` ${repetitions}` : ''}`,
       });
     }
   });
