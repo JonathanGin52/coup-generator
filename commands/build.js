@@ -3,21 +3,23 @@ const game = require('../util/game');
 
 const buildPrompt = () => {
   const prompt = [];
-  for (let card in game) {
-    for (let repetitions = 0; repetitions < game[card].count; repetitions++) {
+  Object.values(game).forEach((type, index) => {
+    for (let repetitions = 0; repetitions < type.count; repetitions++) {
       prompt.push({
         type: 'list',
-        choices: game[card].cards,
-        message: `Select ${repetitions > 0 ? 'another' : 'a'} ${card} influence`,
-        name: `${card}${repetitions > 0 ? ` ${repetitions}` : ''}`,
+        choices: type.cards,
+        message: `Select ${repetitions > 0 ? 'another' : 'a'} ${type} influence.`,
+        name: `${index + repetitions} - ${type}${repetitions > 0 ? ` ${repetitions}` : ''}`,
+        //name: `${card}${repetitions > 0 ? ` ${repetitions}` : ''}`,
       });
     }
-  }
+  });
   return prompt;
 };
 
 module.exports = () => {
   inquirer.prompt(buildPrompt()).then((answers) => {
+    console.log(answers);
     for (const [type, selection] of Object.entries(answers)) {
       // TODO: build seed
       console.log(`${type} ${selection}`);
