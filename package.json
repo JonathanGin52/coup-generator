@@ -4,6 +4,7 @@
   "description": "Card generator for Coup Rebellion G54",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint --ext .js .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -14,5 +15,8 @@
     "cli-color": "^1.4.0",
     "inquirer": "^6.2.2",
     "minimist": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.13.0"
   }
 }
