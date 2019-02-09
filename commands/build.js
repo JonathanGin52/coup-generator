@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const game = require('../util/game');
 
 const prependIndexOnCards = (cards) => {
-  return cards.map( (card, index) => ({...card, name: `${index + 1}) ${card.name}`}) );
+  return cards.map((card, index) => ({...card, name: `${index + 1}) ${card.name}`}));
 };
 
 const buildPrompt = () => {
