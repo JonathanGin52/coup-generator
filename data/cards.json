@@ -68,7 +68,7 @@
     {
       "name": "Mercenary",
       "action": "Active player pays ⓷ to the Treasury and declares a Target. Target places the Disappear token in front of themselves. If the Target still has the Disappear token at the end of their next turn, they lose a life and then discard the token.",
-      "simpleAction": "Pay 3 coins, place Disappear token on target. Player must lose token by end of next round or die.",
+      "simpleAction": "Pay 3 coins, place Disappear token on target. Target must lose token by end of next round or die.",
       "counteraction": "Target may claim Mercenary when they are targeted, or at any time on their next turn to avoid losing a life. They discard the Disappear token if counteracted.",
       "id": 4
     }
