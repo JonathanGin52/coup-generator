@@ -13,7 +13,7 @@ module.exports = () => {
   });
 
   let cmd = args._[0] || 'generate';
-  const verbose = args.v || args.verbose
+  const verbose = args.v || args.verbose;
 
   switch (cmd) {
     case 'generate':

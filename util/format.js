@@ -18,7 +18,7 @@ module.exports = (deck, verbose) => {
       }
       else{
         log(bold('Action: ') + deck[i].simpleAction);
-        deck[i].counteraction ? log(bold('Can counteract?: ') + "✔") : log(bold('Can counteract?: ') + "✘");
+        deck[i].counteraction ? log(bold('Can counteract?: ') + '✔') : log(bold('Can counteract?: ') + '✘');
       }
     }
     cardIndex++;
