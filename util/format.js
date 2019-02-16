@@ -15,8 +15,7 @@ module.exports = (deck, verbose) => {
       if (verbose){
         log(bold('Action: ') + deck[i].action);
         deck[i].counteraction && log(bold('Counteraction: ') + deck[i].counteraction);
-      }
-      else{
+      } else{
         log(bold('Action: ') + deck[i].simpleAction);
         deck[i].counteraction ? log(bold('Can counteract?: ') + '✔') : log(bold('Can counteract?: ') + '✘');
       }
@@ -32,13 +31,12 @@ module.exports.printCards = (cards, verbose) => {
   for (let card of cards) {
     log(horizontalLine());
     log(game[card.type].colour(`${card.type}: ${card.card.name} (${game[card.type].alias.join(', ')})`));
-    if (verbose){
+    if (verbose) {
       log(bold('Action: ') + card.card.action);
       card.card.counteraction && log(bold('Counteraction: ') + card.card.counteraction);
-    }
-    else{
+    } else {
       log(bold('Action: ') + card.card.simpleAction);
-      card.card.counteraction ? log(bold('Can counteract?: ') + "✔") : log(bold('Can counteract?: ') + "✘");
+      card.card.counteraction ? log(bold('Can counteract?: ') + '✔') : log(bold('Can counteract?: ') + '✘');
     }
   }
   log(horizontalLine());
