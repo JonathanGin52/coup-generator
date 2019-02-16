@@ -23,7 +23,7 @@ module.exports = () => {
     case 'load':
     case 'l': {
       const seed = args.s || args.seed;
-      load(seed);
+      load(seed, verbose);
       break;
     }
     case 'build':

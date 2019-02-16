@@ -6,7 +6,7 @@ module.exports = () => {
   log('    generate                - Generates a random coup game and outputs a seed');
   log('    load --seed <game-seed> - Loads a coup game from the given seed');
   log('    explain <role>          - Displays the rules of the searched role(s)');
-  log('Options:');
+  log('Optional flags:');
   log('    [--verbose], [-v]       - Displays full description of the role(s)');
 
 };
