@@ -1,7 +1,7 @@
 const game = require('../util/game');
 const { printCards } = require('../util/format');
 
-module.exports = (character) => {
+module.exports = (character, verbose) => {
   if (!character) {
     return console.log('No card found.');
   }
@@ -16,6 +16,6 @@ module.exports = (character) => {
     }
   }
 
-  printCards(matches);
+  printCards(matches, verbose);
 
 };

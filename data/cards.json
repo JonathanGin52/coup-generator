@@ -128,7 +128,7 @@
     {
       "name": "Foreign Consular",
       "action": "Active player takes both Treaty tokens, placing one in front of themselves and one in front of another player. Players with Treaty tokens may not Target each other unless they are the final two players. This includes Coup actions but does not preclude challenges.",
-      "simpleAction": "Pick a player, neither of you can target each other including coups.",
+      "simpleAction": "Pick a player. Neither of you can target each other including coups.",
       "counteraction": null,
       "id": 2
     },
