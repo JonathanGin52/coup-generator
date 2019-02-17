@@ -12,7 +12,7 @@ module.exports = (deck, verbose) => {
   for (let card in game) {
     for (let repetitions = 0; repetitions < game[card].count; repetitions++) {
       let i = cardIndex + repetitions;
-      let action = deck[i][verbose ? 'action' : 'simpleAction']
+      let action = deck[i][verbose ? 'action' : 'simpleAction'];
       let counteraction = deck[i].counteraction ? (verbose ? deck[i].counteraction : CHECKMARK) : (verbose ? null : XMARK);
 
       horizontalLine();
@@ -28,7 +28,7 @@ module.exports = (deck, verbose) => {
 
 module.exports.printCards = (cards, verbose) => {
   for (let card of cards) {
-    let action = card.card[verbose ? 'action' : 'simpleAction']
+    let action = card.card[verbose ? 'action' : 'simpleAction'];
     let counteraction = card.card.counteraction ? (verbose ? card.card.counteraction : CHECKMARK) : (verbose ? null : XMARK);
 
     horizontalLine();
