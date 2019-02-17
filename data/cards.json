@@ -46,7 +46,7 @@
     },
     {
       "name": "General",
-      "action": "Active player pays ⓹ to the Treasury. All other players become Targets and lose a life",
+      "action": "Active player pays ⓹ to the Treasury. All other players become Targets and lose a life.",
       "simpleAction": "Pay ⓹ , everyone else lose a life.",
       "counteraction": "Target may claim General to avoid losing a life",
       "id": 1
@@ -60,8 +60,8 @@
     },
     {
       "name": "Judge",
-      "action": "Active Player declares a Target and gives Target ⓷. Target loses a life.",
-      "simpleAction": "Pay target ⓷ , they lose a life. If counteracted, coins lost.",
+      "action": "Active Player declares a Target and gives Target ⓷. Target loses a life. If the Target counteracts, the ⓷ are not returned.",
+      "simpleAction": "Pay target ⓷ , they lose a life.",
       "counteraction": "Target may claim judge to avoid losing a life, keeping the ⓷ given",
       "id": 3
     },
@@ -135,7 +135,7 @@
     {
       "name": "Intellectual",
       "action": "When a player loses a life for any reason, they may claim the Intellectual. The card claimed to be the Intellectual is put aside face-down as the lost life and that player takes ⓹ from the Treasury. If challenged the card claimed as the Intellectual is revealed. If the card is not the intellectual, the player that claimed the intellectual loses another life (and does not take ⓹ from the Treasury). If the card is the Intellectual, the challenger loses a life.",
-      "simpleAction": "If life lost, take ⓹ .",
+      "simpleAction": "If you lose a life, take ⓹ .",
       "counteraction": null,
       "id": 3
     },
@@ -149,14 +149,14 @@
     {
       "name": "Missionary",
       "action": "When a player loses a life for any reason other than a Coup, they may claim the Missionary if the deck has at least one card. The card claimed to be Missionary is put aside face-down as the lost life and that player takes 1 card from the deck. If challenged, the card claimed as the Missionary is revealed. If the card is not the Missionary, the player that claimed the Missionary loses another life (and does not take 1 card from the deck) - they may claim Missionary on the second life lost to avoid being eliminated. If the card is the Missionary, the challenger loses a life.",
-      "simpleAction": "If life lost except during coup, exchange a card.",
+      "simpleAction": "If you lose a life, exchange a card except for coups.",
       "counteraction": null,
       "id": 5
     },
     {
       "name": "Peacekeeper",
       "action": "Active player takes ⓵ from the Treasury and then places the Peacekeeping token in front of themselves. While the Peacekeeping token is front of a player, that player cannot be targeted. This does not prevent coup actions nor preclude challenges.",
-      "simpleAction": "Take ⓵ , you can’t be targeted excluding during coup.",
+      "simpleAction": "Take ⓵. You can’t be targeted except for coups.",
       "counteraction": null,
       "id": 6
     },
