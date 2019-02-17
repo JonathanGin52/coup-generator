@@ -2,7 +2,7 @@
 const game = require('./game');
 const { bold } = require('cli-color');
 const { log }= console;
-const horizontalLine = () => '—'.repeat(process.stdout.columns);
+const horizontalLine = () => log('—'.repeat(process.stdout.columns));
 
 module.exports = (deck, verbose) => {
   let cardIndex = 0;
@@ -10,35 +10,31 @@ module.exports = (deck, verbose) => {
   for (let card in game) {
     for (let repetitions = 0; repetitions < game[card].count; repetitions++) {
       let i = cardIndex + repetitions;
-      log(horizontalLine());
+      let action = deck[i][verbose ? 'action' : 'simpleAction']
+      let counteraction = deck[i].counteraction ? (verbose ? deck[i].counteraction : '✔') : (verbose ? null : '✘');
+
+      horizontalLine();
+
       log(game[card].colour(`${card}: ${deck[i].name} (${game[card].alias[repetitions]})`));
-      if (verbose){
-        log(bold('Action: ') + deck[i].action);
-        deck[i].counteraction && log(bold('Counteraction: ') + deck[i].counteraction);
-      } else{
-        log(bold('Action: ') + deck[i].simpleAction);
-        deck[i].counteraction ? log(bold('Can counteract?: ') + '✔') : log(bold('Can counteract?: ') + '✘');
-      }
+      log(`${bold('Action:')} ${action}`);
+      counteraction && log(`${bold('Counter:')} ${counteraction}`);
     }
     cardIndex++;
   }
-  log(horizontalLine());
+  horizontalLine();
 };
-
-
 
 module.exports.printCards = (cards, verbose) => {
   for (let card of cards) {
-    log(horizontalLine());
+    let action = card.card[verbose ? 'action' : 'simpleAction']
+    let counteraction = card.card.counteraction ? (verbose ? card.card.counteraction : '✔') : (verbose ? null : '✘');
+
+    horizontalLine();
+
     log(game[card.type].colour(`${card.type}: ${card.card.name} (${game[card.type].alias.join(', ')})`));
-    if (verbose) {
-      log(bold('Action: ') + card.card.action);
-      card.card.counteraction && log(bold('Counteraction: ') + card.card.counteraction);
-    } else {
-      log(bold('Action: ') + card.card.simpleAction);
-      card.card.counteraction ? log(bold('Can counteract?: ') + '✔') : log(bold('Can counteract?: ') + '✘');
-    }
+    log(bold('Action: ') + action);
+    counteraction && log(`${'Counter:'} ${counteraction}`);
   }
-  log(horizontalLine());
+  horizontalLine();
 };
 

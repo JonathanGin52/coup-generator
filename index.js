@@ -14,6 +14,7 @@ module.exports = () => {
 
   let cmd = args._[0] || 'generate';
   const verbose = args.v || args.verbose;
+  const seed = args.s || args.seed;
 
   switch (cmd) {
     case 'generate':
@@ -22,7 +23,6 @@ module.exports = () => {
       break;
     case 'load':
     case 'l': {
-      const seed = args.s || args.seed;
       load(seed, verbose);
       break;
     }
