@@ -22,5 +22,5 @@ const generateGameSeed = () => {
   return seed;
 };
 
-module.exports = () => load(generateGameSeed());
+module.exports = (verbose) => load(generateGameSeed(), verbose);
 

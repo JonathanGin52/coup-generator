@@ -4,7 +4,7 @@ const formatOutput = require('../util/format');
 const error = require('../util/error');
 const { SEED_LENGTH, RANGE, ERROR } = require('../util/validation');
 
-module.exports = (seed) => {
+module.exports = (seed, verbose) => {
   !seed && error(ERROR.NO_SEED, true);
 
   console.log(`Your game seed is ${underline(seed)}`);
@@ -36,6 +36,6 @@ module.exports = (seed) => {
         break;
     }
   });
-  formatOutput(deck);
+  formatOutput(deck, verbose);
 };
 

@@ -23,6 +23,8 @@
             "single"
         ],
         "no-console": "off",
+        "brace-style": "error",
+        "eqeqeq": "error",
         "semi": [
             "error",
             "always"
