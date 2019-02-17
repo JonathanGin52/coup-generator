@@ -9,7 +9,7 @@
     },
     {
       "name": "Newscaster",
-      "action": "Active player pays ⓵ to the treasury, then takes 3 random cards from the deck. They may secretly change any cards with their own, and then return 3 cards to the deck.",
+      "action": "Active player pays ⓵  to the treasury, then takes 3 random cards from the deck. They may secretly change any cards with their own, and then return 3 cards to the deck.",
       "simpleAction": "Pay ⓵ , exchange 3 cards.",
       "counteraction": null,
       "id": 1
@@ -30,7 +30,7 @@
     },
     {
       "name": "Writer",
-      "action": "Active player takes 1 random card from the deck and looks at it. They may then pay ⓵ to the Treasury to take an additional card from the deck, and look at it. They may repeat that process as often as they pick, paying ⓵ for each additional card. They may secretly change any cards with their own, and then return as many as cards as they took back to the deck.",
+      "action": "Active player takes 1 random card from the deck and looks at it. They may then pay ⓵  to the Treasury to take an additional card from the deck, and look at it. They may repeat that process as often as they pick, paying ⓵  for each additional card. They may secretly change any cards with their own, and then return as many as cards as they took back to the deck.",
       "simpleAction": "Exchange a card, then exchange up to n cards by paying n coins.",
       "counteraction": null,
       "id": 4
@@ -39,35 +39,35 @@
   "force": [
     {
       "name": "Crime Boss",
-      "action": "Active player declares a Target. Target can pick to give the active player ⓶ and the turn ends. If not, the active player must pay ⓹ to the Treasury and the Target loses a life. The active player must have ⓹ to take this action.",
+      "action": "Active player declares a Target. Target can pick to give the active player ⓶  and the turn ends. If not, the active player must pay ⓹  to the Treasury and the Target loses a life. The active player must have ⓹  to take this action.",
       "simpleAction": "Pick target who must give you ⓶ , or you can pay ⓹ to kill target.",
       "counteraction": null,
       "id": 0
     },
     {
       "name": "General",
-      "action": "Active player pays ⓹ to the Treasury. All other players become Targets and lose a life.",
+      "action": "Active player pays ⓹  to the Treasury. All other players become Targets and lose a life.",
       "simpleAction": "Pay ⓹ , everyone else lose a life.",
       "counteraction": "Target may claim General to avoid losing a life",
       "id": 1
     },
     {
       "name": "Guerrilla",
-      "action": "Active player pays ⓸ and declares Target. Target loses a life.",
+      "action": "Active player pays ⓸  and declares Target. Target loses a life.",
       "simpleAction": "Pay ⓸ , kill target.",
       "counteraction": "Target may claim Guerrilla to avoid losing a life",
       "id": 2
     },
     {
       "name": "Judge",
-      "action": "Active Player declares a Target and gives Target ⓷. Target loses a life. If the Target counteracts, the ⓷ are not returned.",
+      "action": "Active Player declares a Target and gives Target ⓷ . Target loses a life. If the Target counteracts, the ⓷  are not returned.",
       "simpleAction": "Pay target ⓷ , they lose a life.",
-      "counteraction": "Target may claim judge to avoid losing a life, keeping the ⓷ given",
+      "counteraction": "Target may claim judge to avoid losing a life, keeping the ⓷  given",
       "id": 3
     },
     {
       "name": "Mercenary",
-      "action": "Active player pays ⓷ to the Treasury and declares a Target. Target places the Disappear token in front of themselves. If the Target still has the Disappear token at the end of their next turn, they lose a life and then discard the token.",
+      "action": "Active player pays ⓷  to the Treasury and declares a Target. Target places the Disappear token in front of themselves. If the Target still has the Disappear token at the end of their next turn, they lose a life and then discard the token.",
       "simpleAction": "Pay ⓷ , put token on target. Lose token by end of next round or die.",
       "counteraction": "Target may claim Mercenary when they are targeted, or at any time on their next turn to avoid losing a life. They discard the Disappear token if counteracted.",
       "id": 4
@@ -76,22 +76,22 @@
   "finance": [
     {
       "name": "Banker",
-      "action": "Active player takes ⓷ from the Treasury.",
+      "action": "Active player takes ⓷  from the Treasury.",
       "simpleAction": "Take ⓷ .",
       "counteraction": null,
       "id": 0
     },
     {
       "name": "Capitalist",
-      "action": "Active player first takes ⓸ from the Treasury. Then any other players may also claim Capitalist. Once all claims have been made, challenges are resolved for new claimants in clockwise order from the active player. Then the active player must give ⓵ to each surviving Capitalist claimant.",
-      "simpleAction": "Take ⓸ , pay ⓵ to other Capitalist claimants.",
+      "action": "Active player first takes ⓸  from the Treasury. Then any other players may also claim Capitalist. Once all claims have been made, challenges are resolved for new claimants in clockwise order from the active player. Then the active player must give ⓵  to each surviving Capitalist claimant.",
+      "simpleAction": "Take ⓸ , pay ⓵  to other Capitalist claimants.",
       "counteraction": null,
       "id": 1
     },
     {
       "name": "Farmer",
-      "action": "Active player takes ⓷ from the Treasury and must then give ⓵ to another player of their choice.",
-      "simpleAction": "Take ⓷ , give ⓵ to anyone.",
+      "action": "Active player takes ⓷  from the Treasury and must then give ⓵  to another player of their choice.",
+      "simpleAction": "Take ⓷ , give ⓵  to anyone.",
       "counteraction": null,
       "id": 2
     },
@@ -104,7 +104,7 @@
     },
     {
       "name": "Spy",
-      "action": "Active player takes ⓵ from the Treasury and can then take an additional action of their choice. They cannot take the intel action again this turn.\nIf a player starts a turn with 10 or more coins, they must take the Coup action and may not claim spy before doing so. If a player takes the intel action and then has 10 coins - they must take the Coup action as their additional action.",
+      "action": "Active player takes ⓵  from the Treasury and can then take an additional action of their choice. They cannot take the intel action again this turn.\nIf a player starts a turn with 10 or more coins, they must take the Coup action and may not claim spy before doing so. If a player takes the intel action and then has 10 coins - they must take the Coup action as their additional action.",
       "simpleAction": "Take ⓵ , take another turn.",
       "counteraction": null,
       "id": 4
@@ -113,15 +113,15 @@
   "specialInterest": [
     {
       "name": "Communist",
-      "action": "Active player takes up to ⓷ from the player with the most coins (Target) and gives the taken coins to the player with the fewest coins. In the event of a tie for most or fewest coins, the active player decides who is the Target.",
-      "simpleAction": "Take up to ⓷ from richest player, give to poorest player.",
+      "action": "Active player takes up to ⓷  from the player with the most coins (Target) and gives the taken coins to the player with the fewest coins. In the event of a tie for most or fewest coins, the active player decides who is the Target.",
+      "simpleAction": "Take up to ⓷  from richest player, give to poorest player.",
       "counteraction": "Target may claim Communist to avoid giving any coins.",
       "id": 0
     },
     {
       "name": "Customs Officer",
-      "action": "Active player takes both tax tokens, placing one in front of themselves and one on a role card in play. Before any player can claim the role (for either an action or counteraction) that has the Tax token on it, they must first give ⓵ to the player with the Tax token - if they do not have a coin to give, they may not claim that role. If the player that has the Tax token is eliminated, remove the Tax token from the role card.",
-      "simpleAction": "Pick a role. Everyone else must pay ⓵ to claim that role.",
+      "action": "Active player takes both tax tokens, placing one in front of themselves and one on a role card in play. Before any player can claim the role (for either an action or counteraction) that has the Tax token on it, they must first give ⓵  to the player with the Tax token - if they do not have a coin to give, they may not claim that role. If the player that has the Tax token is eliminated, remove the Tax token from the role card.",
+      "simpleAction": "Pick a role. Everyone else must pay ⓵  to claim that role.",
       "counteraction": null,
       "id": 1
     },
@@ -134,7 +134,7 @@
     },
     {
       "name": "Intellectual",
-      "action": "When a player loses a life for any reason, they may claim the Intellectual. The card claimed to be the Intellectual is put aside face-down as the lost life and that player takes ⓹ from the Treasury. If challenged the card claimed as the Intellectual is revealed. If the card is not the intellectual, the player that claimed the intellectual loses another life (and does not take ⓹ from the Treasury). If the card is the Intellectual, the challenger loses a life.",
+      "action": "When a player loses a life for any reason, they may claim the Intellectual. The card claimed to be the Intellectual is put aside face-down as the lost life and that player takes ⓹  from the Treasury. If challenged the card claimed as the Intellectual is revealed. If the card is not the intellectual, the player that claimed the intellectual loses another life (and does not take ⓹  from the Treasury). If the card is the Intellectual, the challenger loses a life.",
       "simpleAction": "If you lose a life, take ⓹ .",
       "counteraction": null,
       "id": 3
@@ -155,29 +155,29 @@
     },
     {
       "name": "Peacekeeper",
-      "action": "Active player takes ⓵ from the Treasury and then places the Peacekeeping token in front of themselves. While the Peacekeeping token is front of a player, that player cannot be targeted. This does not prevent coup actions nor preclude challenges.",
-      "simpleAction": "Take ⓵. You can’t be targeted except for coups.",
+      "action": "Active player takes ⓵  from the Treasury and then places the Peacekeeping token in front of themselves. While the Peacekeeping token is front of a player, that player cannot be targeted. This does not prevent coup actions nor preclude challenges.",
+      "simpleAction": "Take ⓵ . You can’t be targeted except for coups.",
       "counteraction": null,
       "id": 6
     },
     {
       "name": "Politician",
-      "action": "Active player declares Target and takes up to ⓶ from the Target.",
-      "simpleAction": "Take up to ⓶ from target.",
+      "action": "Active player declares Target and takes up to ⓶  from the Target.",
+      "simpleAction": "Take up to ⓶  from target.",
       "counteraction": "Target may claim politician to avoid giving any coins.",
       "id": 7
     },
     {
       "name": "Priest",
-      "action": "When active player claims Priest, all other players become Targets and have to give ⓵ to the active player.",
+      "action": "When active player claims Priest, all other players become Targets and have to give ⓵  to the active player.",
       "simpleAction": "Everyone must give you ⓵ .",
-      "counteraction": "Target may claim Priest to avoid giving ⓵ to the active player.",
+      "counteraction": "Target may claim Priest to avoid giving ⓵  to the active player.",
       "id": 8
     },
     {
       "name": "Protestor",
-      "action": "Active player pays ⓶ to the Treasury and declares Target. Any player may challenge, if not successfully challenged then any other player can pay ⓷ to the Treasury to join the riot and the Target loses a life. The player joining the Riot does not have to claim Protestor, if no other player joins the Riot, the action fails without coins being returned.",
-      "simpleAction": "Pay ⓶ , pick target. Another player can pay ⓷ to kill target.",
+      "action": "Active player pays ⓶  to the Treasury and declares Target. Any player may challenge, if not successfully challenged then any other player can pay ⓷  to the Treasury to join the riot and the Target loses a life. The player joining the Riot does not have to claim Protestor, if no other player joins the Riot, the action fails without coins being returned.",
+      "simpleAction": "Pay ⓶ , pick target. Another player can pay ⓷  to kill target.",
       "counteraction": "After both players have joined the Riot, the Target may claim Protestor to avoid losing a life.",
       "id": 9
     }
