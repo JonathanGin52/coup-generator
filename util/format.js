@@ -4,7 +4,7 @@ const { bold, green, red } = require('cli-color');
 const { log }= console;
 const horizontalLine = () => log('—'.repeat(process.stdout.columns));
 const CHECKMARK = green('✔');
-const XMARK = red('✖');
+const CROSSMARK = red('✖');
 
 module.exports = (deck, verbose) => {
   let cardIndex = 0;
@@ -13,7 +13,7 @@ module.exports = (deck, verbose) => {
     for (let repetitions = 0; repetitions < game[card].count; repetitions++) {
       let i = cardIndex + repetitions;
       let action = deck[i][verbose ? 'action' : 'simpleAction'];
-      let counteraction = deck[i].counteraction ? (verbose ? deck[i].counteraction : CHECKMARK) : (verbose ? null : XMARK);
+      let counteraction = deck[i].counteraction ? (verbose ? deck[i].counteraction : CHECKMARK) : (verbose ? null : CROSSMARK);
 
       horizontalLine();
 
@@ -29,7 +29,7 @@ module.exports = (deck, verbose) => {
 module.exports.printCards = (cards, verbose) => {
   for (let card of cards) {
     let action = card.card[verbose ? 'action' : 'simpleAction'];
-    let counteraction = card.card.counteraction ? (verbose ? card.card.counteraction : CHECKMARK) : (verbose ? null : XMARK);
+    let counteraction = card.card.counteraction ? (verbose ? card.card.counteraction : CHECKMARK) : (verbose ? null : CROSSMARK);
 
     horizontalLine();
 
