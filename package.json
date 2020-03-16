@@ -15,7 +15,7 @@
   "dependencies": {
     "cli-color": "^1.4.0",
     "enquirer": "^2.3.0",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.2"
   },
   "devDependencies": {
     "eslint": "^5.13.0"
